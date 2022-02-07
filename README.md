@@ -1,56 +1,46 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magician
 
-> Description the project.
-
+> A calculator built using react for performing simple mathematical problem.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
+- Sass
+- Git
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
-
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+clone repo: `git clone https://github.com/netman5/react-calculator.git`
+
+then
+`cd calculator`
+
+then
+`cd calculator-app`
 
 ### Install
 
-### Usage
+run `npm install` to install dependencies
 
-### Run tests
-
-### Deployment
-
-
+then run `npm start` to start the development server
 
 ## Authors
 
-👤 **Author1**
+👤 **Ola Ishola**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@netman5](https://github.com/netman5)
+- Twitter: [@Orlaish](https://twitter.com/Orlaish)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ola-ishola/)
 
 ## 🤝 Contributing
 
