@@ -1,0 +1,12 @@
+.Button {
+  background: beige;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 133px;
+  font-size: 18px;
+  min-width: 25%;
+  padding: 30px 30px;
+}
