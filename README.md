@@ -4,6 +4,8 @@
 
 > A calculator built using react for performing simple mathematical problem.
 
+![calculator](./images/calculator.png)
+
 ## Built With
 
 - React
@@ -24,9 +26,6 @@ clone repo: `git clone https://github.com/netman5/react-calculator.git`
 
 then
 `cd calculator`
-
-then
-`cd calculator-app`
 
 ### Install
 
