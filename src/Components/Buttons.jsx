@@ -6,11 +6,9 @@ class Buttons extends Component {
   render() {
     const { label, value } = this.props;
     return (
-      <div>
-        <button type="button" className="Button" value={value}>
-          {label}
-        </button>
-      </div>
+      <button type="button" className="Button" value={value}>
+        {label}
+      </button>
     );
   }
 }

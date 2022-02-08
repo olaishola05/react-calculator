@@ -1,12 +1,23 @@
+$Buttons-color: #e0e0e0;
+$signs-color: #f5913e;
+
 .Button {
-  background: beige;
+  background: $Buttons-color;
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  width: 133px;
   font-size: 18px;
   min-width: 25%;
   padding: 30px 30px;
+  grid-column: span 1;
+}
+
+.Button[value='÷'],
+.Button[value='x'],
+.Button[value='-'],
+.Button[value='+'],
+.Button[value='equal'] {
+  background: $signs-color;
 }

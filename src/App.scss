@@ -3,11 +3,16 @@
 @import './SCSS/keypad';
 @import './SCSS/button';
 
-$signs-color: #f5913e;
-$Buttons-color: #e0e0e0;
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .calculator {
   width: 40%;
+  display: grid;
+  // flex-direction: column;
   margin: 0 auto;
   margin-top: 50px;
 }
