@@ -1,0 +1,16 @@
+$input-color: #858694;
+
+.output {
+  background-color: $input-color;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  justify-content: flex-end;
+  margin-bottom: 2px;
+
+  .value {
+    color: white;
+    font-size: 30px;
+    padding-right: 5px;
+  }
+}
