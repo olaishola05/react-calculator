@@ -31,7 +31,7 @@ run `npm install` to install dependencies
 
 then run `npm start` to start the development server
 
-## Authors
+## Author
 
 👤 **Ola Ishola**
 
