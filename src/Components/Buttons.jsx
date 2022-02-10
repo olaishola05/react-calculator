@@ -1,14 +1,12 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Buttons extends Component {
   render() {
-    const { label, value } = this.props;
+    const { label, value, handleClick } = this.props;
     return (
-      <button type="button" className="Button" value={value} onClick={(e) => this.props.handleClick(e)}>
+      <button type="button" className="Button" value={value} onClick={(e) => handleClick(e)}>
         {label}
       </button>
     );

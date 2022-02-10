@@ -95,7 +95,7 @@ img {
 .Button[value='x'],
 .Button[value='-'],
 .Button[value='+'],
-.Button[value='equal'] {
+.Button[value='='] {
   background: #f5913e;
 }
 

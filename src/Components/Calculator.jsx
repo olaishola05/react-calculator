@@ -1,43 +1,39 @@
-/* eslint-disable comma-dangle */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable max-len */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-useless-constructor */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import Keypads from './Keypad';
-import Outputs from './Output';
 import Button from './Buttons';
 import calculate from '../logic/calculate';
 
-export default class Calculator extends Component {
-  constructor() {
-    super();
-    // eslint-disable-next-line react/no-unused-state
-    this.state = {
+class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({
       total: null,
       next: null,
       operation: null,
-      value: '',
-    };
+    });
   }
 
-  handleClick = (e) => {
-    const btnValue = e.target.getAttribute('value');
-    const result = calculate(
-      this.setState((prevState) => prevState === btnValue),
-      btnValue
-    );
-
-    console.log(result);
-  };
+  handleClick(e) {
+    this.setState((operate) => calculate(operate, e.target.value));
+  }
 
   render() {
+    const { total, next, operation } = this.state;
+    const data = next || operation || total || 0;
+
     return (
       <div className="calculator">
-        <Outputs data={this.state.value || this.state.next || this.state.operation || this.state.total} />
+        <div className="output">
+          <span className="value">{data}</span>
+        </div>
         <Keypads>
-          <Button label="AC" value="Clear" handleClick={this.handleClick} />
+          <Button label="AC" value="AC" handleClick={this.handleClick} />
           <Button label="+/-" value="+/-" handleClick={this.handleClick} />
           <Button label="%" value="%" handleClick={this.handleClick} />
           <Button label="÷" value="÷" handleClick={this.handleClick} />
@@ -45,7 +41,7 @@ export default class Calculator extends Component {
           <Button label="7" value="7" handleClick={this.handleClick} />
           <Button label="8" value="8" handleClick={this.handleClick} />
           <Button label="9" value="9" handleClick={this.handleClick} />
-          <Button label="X" value="x" handleClick={this.handleClick} />
+          <Button label="x" value="x" handleClick={this.handleClick} />
 
           <Button label="4" value="4" handleClick={this.handleClick} />
           <Button label="5" value="5" handleClick={this.handleClick} />
@@ -65,3 +61,5 @@ export default class Calculator extends Component {
     );
   }
 }
+
+export default Calculator;
