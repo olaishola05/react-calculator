@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-closing-bracket-location */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   const links = [
@@ -25,9 +26,18 @@ function Navbar() {
       <ul>
         {links.map((link) => (
           <li key={link.id}>
-            <Link to={link.path} exact="true" className="links">
+            <NavLink
+              to={link.path}
+              exact="true"
+              className="links"
+              style={({ isActive }) => ({
+                textDecoration: 'none',
+                margin: '0 10px',
+                borderBottom: isActive ? 'solid 5px #f5913e' : '',
+                color: isActive ? '#f5913e' : 'black',
+              })}>
               {link.text}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

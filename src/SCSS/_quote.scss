@@ -1,0 +1,14 @@
+.quote {
+  width: 70%;
+  margin: 15% auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  blockquote {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+}

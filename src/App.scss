@@ -4,6 +4,7 @@
 @import './SCSS/button';
 @import './SCSS/nav.scss';
 @import './SCSS/home';
+@import './SCSS/quote';
 
 .body {
   display: flex;
@@ -11,10 +12,38 @@
   justify-content: center;
 }
 
+.App {
+  background-color: #e0e0e0;
+  width: 100%;
+}
+
+.calcContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+
 .calculator {
-  width: 50%;
+  width: 45%;
   display: grid;
-  margin-top: 50px;
+  margin-top: 10px;
   float: right;
-  margin-right: 20px;
+}
+
+footer {
+  padding: 5px 15px;
+  margin: 0 15px;
+
+  .heart {
+    color: red;
+    font-size: 20px;
+  }
 }
