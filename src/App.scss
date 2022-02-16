@@ -2,6 +2,8 @@
 @import './SCSS/display';
 @import './SCSS/keypad';
 @import './SCSS/button';
+@import './SCSS/nav.scss';
+@import './SCSS/home';
 
 .body {
   display: flex;
@@ -10,8 +12,9 @@
 }
 
 .calculator {
-  width: 40%;
+  width: 50%;
   display: grid;
-  margin: 0 auto;
   margin-top: 50px;
+  float: right;
+  margin-right: 20px;
 }

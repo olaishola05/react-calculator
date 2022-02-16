@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .links {
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  }
+}
