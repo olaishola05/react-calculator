@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  padding: 3px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #858694;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f5913e;
+  }
+
+  ul {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .links {
+      font-size: 1.2rem;
+    }
+  }
+}

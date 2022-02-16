@@ -2,17 +2,18 @@
 
 # Math Magician
 
-> A calculator built using react for performing simple mathematical problem.
+> A calculator built using react for performing simple mathematical problem with navigation using react-router
 
-![calculator](./images/calculator.png)
+![calculator](./images/mathmagician.gif)
 
 ## Built With
 
 - React
 - Sass
 - Git
+- React-Router-DOM
 
-## Live Demo (if available)
+## Live Demo [here](https://netman5.github.io/react-calculator/)
 
 ## Getting Started
 
