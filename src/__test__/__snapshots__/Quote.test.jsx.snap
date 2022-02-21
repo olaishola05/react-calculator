@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component using Jest Test Quote component if it matches render 1`] = `
+Object {
+  "instance": null,
+  "nodeType": "component",
+  "props": Object {},
+  "rendered": Object {
+    "instance": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": <blockquote
+        data-testid="descendant"
+      >
+        Mathematics is not about numbers, eqautions, computations or algorithms; it is about understanding. —William Paul Thurston
+      </blockquote>,
+      "className": "quote",
+      "data-testid": "ancestor",
+    },
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Mathematics is not about numbers, eqautions, computations or algorithms; it is about understanding. —William Paul Thurston",
+          "data-testid": "descendant",
+        },
+        "rendered": Array [
+          "Mathematics is not about numbers, eqautions, computations or algorithms; it is about understanding. —William Paul Thurston",
+        ],
+        "type": "blockquote",
+      },
+    ],
+    "type": "div",
+  },
+  "type": [Function],
+}
+`;

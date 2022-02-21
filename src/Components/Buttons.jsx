@@ -1,9 +1,13 @@
-/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/jsx-closing-bracket-location */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const Buttons = ({ label, value, handleClick }) => (
-  <button type="button" className="Button" value={value} onClick={(e) => handleClick(e)}>
+  <button
+    type="button"
+    className="Button"
+    value={value}
+    onClick={(e) => handleClick(e)}>
     {label}
   </button>
 );
