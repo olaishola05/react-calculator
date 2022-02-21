@@ -45,7 +45,7 @@ describe('Test operators sign', () => {
     ops = '%';
     const value = '21';
     expect(operate(value, '0', ops)).toString(
-      "Can't find modulo as can't divide by 0"
+      "Can't find modulo as can't divide by 0",
     );
   });
 });
