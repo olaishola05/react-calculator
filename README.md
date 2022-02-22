@@ -13,7 +13,11 @@
 - Git
 - React-Router-DOM
 
-## Live Demo [here](https://netman5.github.io/react-calculator/)
+## Live Demo [Heroku](https://mathgenie.herokuapp.com/)
+
+## Live Demo [Netlify](https://mathmagiciann.netlify.app/)
+
+## Live Demo [GitHub Pages](https://netman5.github.io/react-calculator/)
 
 ## Getting Started
 
